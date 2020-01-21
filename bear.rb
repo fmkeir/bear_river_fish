@@ -22,7 +22,7 @@ class Bear
   end
 
   def poop
-    @stomach = []
+    @stomach.clear
   end
 
 end
