@@ -12,4 +12,9 @@ class Bear
   def eat_fish(fish)
     @stomach.push(fish)
   end
+
+  def take_fish_from(source)
+    eat_fish(source.remove_fish)  
+  end
+
 end
