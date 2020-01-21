@@ -21,4 +21,8 @@ class Bear
     return "ROAR"
   end
 
+  def poop
+    @stomach = []
+  end
+
 end
