@@ -14,7 +14,11 @@ class Bear
   end
 
   def take_fish_from(source)
-    eat_fish(source.remove_fish)  
+    eat_fish(source.remove_fish)
+  end
+
+  def roar
+    return "ROAR"
   end
 
 end
