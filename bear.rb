@@ -14,7 +14,11 @@ class Bear
   end
 
   def take_fish_from(source)
-    eat_fish(source.remove_fish)
+    # Should check if the fish is nil before adding. don't want nil fish in the stomach
+    fish = source.remove_fish
+    # eat_fish(fish) if !fish.nil?
+    eat_fish(fish) if fish
+    # eat_fish(source.remove_fish)
   end
 
   def roar
